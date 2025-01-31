@@ -24,17 +24,31 @@
             font-family: "Sora", serif;
         }
     </style>
+    <!-- Code For Color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'accent': '#FFDC26',
+                'background': '#FFF9F4',
+              }
+            }
+          }
+        }
+      </script>
 </head>
 <body class="font-sora">
     <header>
     <!-- Navbar Start -->
-     <section class="">
-        <div class="bg-[#FFF9F4] ">
+     <section>
+        <div class="bg-background ">
             <div class=" flex justify-between p-6 border-b border-gray-400 md:border-none lg:ml-36">
                 <div class="flex gap-3 items-center">
                     <img src="c1-assets/logo-header.png" alt="">
                     <h3 class="text-2xl font-normal hidden lg:block">
-                        Browse<span class="text-[#FFDC26]">4</span>Pets
+                        Browse<span class="text-accent">4</span>Pets
                     </h3>
                 </div>
                 <div>
@@ -47,8 +61,8 @@
                 <div class="hidden gap-3 md:flex items-center">
                     <i class="fa-regular fa-bell"></i>
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <button class=" border-solid border-2 border-[#FFDC26] px-7 py-2 rounded-lg font-normal text-xl">Login</button>
-                    <button class=" bg-[#FFDC26] px-7 py-2 rounded-lg font-normal text-xl">Register</button>
+                    <button class=" border-solid border-2 border-accent px-7 py-2 rounded-lg font-normal text-xl">Login</button>
+                    <button class=" bg-accent px-7 py-2 rounded-lg font-normal text-xl">Register</button>
                 </div>
                 <div>
                     <i class="fa-solid fa-bars lg:hidden"></i>
@@ -56,7 +70,25 @@
             </div>
          </div>
      </section>
-     <!-- Navbar End -->
+    <!-- Navbar End -->
+    <!-- Banner Section Start -->
+     <section>
+        <div class="md:flex text-left mt-16 md:mx-36">
+            <div>
+                <h3 class="font-adlam-display text-5xl mb-4">
+                    Pamper Your Pet,<br> Because They Deserve <br>the Best
+                </h3>
+                <p class="text-xl font-normal">
+                    Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!
+                </p>
+                <button class="bg-accent px-7 py-2 rounded-lg font-normal text-xl mt-6">Find a pet</button>
+            </div>
+            <div>
+                <img src="c1-assets/cat-big.png" alt="">
+            </div>
+        </div>
+     </section>
+    <!-- Banner Section End -->
     </header>
     
 </body>
