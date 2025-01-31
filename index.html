@@ -7,6 +7,10 @@
     <!-- TailwindCss CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- DaisyUi CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- Font Code -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,6 +37,7 @@
                 clifford: '#da373d',
                 'accent': '#FFDC26',
                 'background': '#FFF9F4',
+                'card-color': "rgba(249, 223, 138, 1)",
               }
             }
           }
@@ -73,23 +78,88 @@
     <!-- Navbar End -->
     <!-- Banner Section Start -->
      <section>
-        <div class="md:flex text-left mt-16 md:mx-36">
-            <div>
+        <div class=" mt-16 md:mx-36 md:bg-[url('c1-assets/cat-big.png')] bg-no-repeat h-screen">
+            <div class="text-left">
                 <h3 class="font-adlam-display text-5xl mb-4">
                     Pamper Your Pet,<br> Because They Deserve <br>the Best
                 </h3>
                 <p class="text-xl font-normal">
-                    Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!
+                    Discover a world of treats, toys, and essentials handpicked for your furry friends. <br> Shop now and make tails wag with joy!
                 </p>
-                <button class="bg-accent px-7 py-2 rounded-lg font-normal text-xl mt-6">Find a pet</button>
+                <button class="bg-accent px-7 py-2 rounded-lg border-none font-normal text-xl mt-6">Find a pet</button>
             </div>
-            <div>
+            <div class="md:hidden">
                 <img src="c1-assets/cat-big.png" alt="">
             </div>
         </div>
      </section>
     <!-- Banner Section End -->
     </header>
+    <main>
+        <!-- Categories Section Start -->
+         <section class="mt-16 md:mx-36">
+            <div class="ml-16 md:ml-0">
+                <h2 class="font-adlam-display text-4xl font-normal pb-12">Browse By Categories</h2>
+            </div>
+            <div class="flex md:gap-6 flex-wrap gap-2.5 justify-center">
+                <div class="flex justify-center pt-7 w-2/5 h-4/5 bg-card-color rounded-xl md:w-52 md:h-44 ">
+                    <div>
+                       <div class="h-20 w-20 rounded-full bg-white flex items-center justify-center ">
+                        <img src="c1-assets/dog-cartoon.png">
+                       </div>
+                        <h6 class="font-adlam-display text-xl text-center">Dog</h6>
+                        <p class="text-base text-center">3 items</p>
+                    </div>
+                </div>
+                <div class="flex justify-center pt-7  w-2/5 h-4/5 bg-card-color rounded-xl md:w-52 md:h-44 ">
+                    <div>
+                       <div class="h-20 w-20 rounded-full bg-white flex items-center justify-center ">
+                        <img src="c1-assets/fish-cartoon.png">
+                       </div>
+                        <h6 class="font-adlam-display text-xl text-center">Fish</h6>
+                        <p class="text-base text-center">3 items</p>
+                    </div>
+                </div>
+                <div class="flex justify-center pt-7 w-2/5 h-4/5 bg-card-color rounded-xl md:w-52 md:h-44 ">
+                    <div>
+                       <div class="h-20 w-20 rounded-full bg-white flex items-center justify-center ">
+                        <img src="c1-assets/cat-cartoon.png">
+                       </div>
+                        <h6 class="font-adlam-display text-xl text-center">Cat</h6>
+                        <p class="text-base text-center">3 items</p>
+                    </div>
+                </div>
+                <div class="flex justify-center pt-7 w-2/5 h-4/5 bg-card-color rounded-xl md:w-52 md:h-44 ">
+                    <div>
+                       <div class="h-20 w-20 rounded-full bg-white flex items-center justify-center ">
+                        <img src="c1-assets/bird-cartoon.png">
+                       </div>
+                        <h6 class="font-adlam-display text-xl text-center">Birds</h6>
+                        <p class="text-base text-center">3 items</p>
+                    </div>
+                </div>
+                <div class="flex justify-center pt-7 w-2/5 h-4/5 bg-card-color rounded-xl md:w-52 md:h-44 ">
+                    <div>
+                       <div class="h-20 w-20 rounded-full bg-white flex items-center justify-center ">
+                        <img src="c1-assets/mouse-cartoon.png">
+                       </div>
+                        <h6 class="font-adlam-display text-xl text-center">Small pet</h6>
+                        <p class="text-base text-center">3 items</p>
+                    </div>
+                </div>
+                <div class="flex justify-center pt-7 w-2/5 h-4/5 bg-card-color rounded-xl md:w-52 md:h-44 ">
+                    <div>
+                       <div class="h-20 w-20 rounded-full bg-white flex items-center justify-center ">
+                        <img src="c1-assets/rabbit-cartoon.png">
+                       </div>
+                        <h6 class="font-adlam-display text-xl text-center">Rabit</h6>
+                        <p class="text-base text-center">2 items</p>
+                    </div>
+                </div>
+            </div>
+         </section>
+        <!-- Categories Section Start -->
+    </main>
     
 </body>
 </html>
